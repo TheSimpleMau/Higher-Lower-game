@@ -14,7 +14,7 @@ git clone https://github.com/TheSimpleMau/Higher-Lower-game.git
 pip -r requirements.txt
 ```
 
-## Uso 🦦
+## Uso 👾
 
 Para usarlo, simplemente ejecute la siguiente linea:
 ```bash
