@@ -1,3 +1,5 @@
 venv/
 *.png
 __pycache__/
+prueba.py
+game_data.py

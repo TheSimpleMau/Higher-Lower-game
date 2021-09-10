@@ -1,4 +1,8 @@
-from random import choice
+###########################################
+#####Importando los modulos necesarios#####
+###########################################
+
+from random import choice #
 from constants_and_ascii import *
 from getpass import getuser
 from cowsay import tux
@@ -6,14 +10,25 @@ from time import sleep
 from os import system
 
 
+#######################################################
+#####Definiendo funciones necesarias para el juego#####
+#######################################################
+
 def waiting(time,clear_screen=True):
     sleep(time)
     if clear_screen == True:
         system('clear')
 
 
-def random_person():
-    return choice(data)
+def random_person(persons_used):
+    datos = list(data)
+    k = 0
+    for i in datos:
+        for j in persons_used:
+            if j == i:
+                datos.pop(k)
+        k+=1
+    return choice(datos)
 
 
 def caracterisitcs(data):
