@@ -58,7 +58,7 @@ def game():
             #Le imprimimos que no se ha equivocado y continuamos
             print('Correcto, vamos con el siguiente')
             i+=1
-            waiting(0,clear_screen=False)
+            waiting(4,clear_screen=False)
         #Si no, entonces...
         elif guessing != person_higer:
             #Le damos un poco de suspenso y...
@@ -84,7 +84,6 @@ Llevabas una racha de {i} personas sin perder.''')
         print('Le has atinado correctamente a toda la base de datos que tenemos xD')
         #Y le preguntamos que si quiere volver a jugar
         again = input('Quieres volver a jugar? (s/n) ').lower()
-        waiting(5)
 
 
 ###########################
@@ -102,7 +101,6 @@ def main():
     jugar = 's'
     while jugar == 's':
         jugar = game()
-    waiting(5)
     #Cuando ya no quiera jugar, le damos las gracias al usuario por jugar :)
     tux('Gracias por jugar!!!')
     waiting(5)

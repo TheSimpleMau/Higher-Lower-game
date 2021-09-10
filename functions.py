@@ -55,6 +55,7 @@ def tutorial():
     tux('El punto del juego es adivinar cual de esas dos cosas es más famosa que la otra.')
     waiting(5)
     tux('Y eso es todo. Ahora que ya sabes jugar, vamos a ello.')
+    waiting(5)
 
 
 def introduction():
@@ -69,7 +70,7 @@ def introduction():
 No se jugar = n''')
     tuto = input('La verdad es que... ').lower()
     if tuto == 's':
-        waiting(0)
         tux('Genial!!! entonces vamos a jugar')
+        waiting(5)
     else:
         tutorial()
